@@ -17,7 +17,7 @@ public class Servlet2 extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		response.getWriter().println("<p>Ip: " + request.getRemoteAddr() + "</p>");
+		response.getWriter().println("<p>Port TCP: " + request.getRemotePort() + "</p>");
 		
 	}
 
