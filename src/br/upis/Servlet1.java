@@ -15,7 +15,7 @@ public class Servlet1 extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		response.getWriter().println("<p>Data: " + new Date() + "</p>");
+		response.getWriter().println("<p>Acesso em: " + new Date() + "</p>");
 		
 		RequestDispatcher rd = request.getRequestDispatcher("segundo");
 		rd.include(request, response);
