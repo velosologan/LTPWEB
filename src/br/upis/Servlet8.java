@@ -7,9 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class Servlet8
- */
 @WebServlet("/oitavo")
 public class Servlet8 extends HttpServlet {
 	
