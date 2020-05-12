@@ -48,7 +48,7 @@ public class Autenticacao extends HttpServlet {
 				out.println("<head>");
 				out.println("</head>");
 				out.println("<body>");
-				out.println("Usu·rio ou senha inv·lidos");
+				out.println("Usu√°rio ou senha inv√°lidos");
 				out.println("<a href=\"Credenciais.html\"> Tentar novamente </a>");
 				out.println("</body>");
 				out.println("</html>");
