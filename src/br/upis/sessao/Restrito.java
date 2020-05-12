@@ -29,8 +29,8 @@ public class Restrito extends HttpServlet {
     		out.println("<head>");
     		out.println("</head>");
     		out.println("<body>");
-    		out.println("Ol�: " + ref.getNome() + "<br/>");
-    		out.println("Voc� acessou um �rea restrita em: " + new Date() + "<br/>");
+    		out.println("Olá: " + ref.getNome() + "<br/>");
+    		out.println("Você acessou um área restrita em: " + new Date() + "<br/>");
     		out.println("<a href=\"invalidar\"> Logout </a>");
     		out.println("</body>");
     		out.println("</html>");
@@ -43,7 +43,7 @@ public class Restrito extends HttpServlet {
 			out.println("<head>");
 			out.println("</head>");
 			out.println("<body>");
-			out.println("Voc� est� sendo monitorado bem de pertinho devido a tenttiva indevida de acesso �s �reas restritas do sistema.");
+			out.println("Você está sendo monitorado bem de pertinho devido a tentativa indevida de acesso às áreas restritas do sistema.");
 			out.println("<a href=\"Credenciais.html\"> Quer tentar se logar de novo? </a>");
 			out.println("</body>");
 			out.println("</html>");
