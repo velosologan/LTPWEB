@@ -23,7 +23,7 @@ public class Autenticacao extends HttpServlet {
 			
 			if(name.equals("veloso") && password.equals("123456")) {
 				
-				Usuario user = new Usuario(name, password);
+				UsuarioSessao user = new UsuarioSessao(name, password);
 				
 				HttpSession session = request.getSession();
 				

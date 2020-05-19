@@ -23,7 +23,7 @@ public class Restrito extends HttpServlet {
     		
     		PrintWriter out = response.getWriter();
     		
-    		Usuario ref = (Usuario)request.getSession(false).getAttribute("aut");
+    		UsuarioSessao ref = (UsuarioSessao)request.getSession(false).getAttribute("aut");
     		
     		out.println("<html>");
     		out.println("<head>");

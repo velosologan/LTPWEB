@@ -1,11 +1,11 @@
 package br.upis.sessao;
 
-public class Usuario {
+public class UsuarioSessao {
 
 	private String nome;
 	private String senha;
 
-	public Usuario(String name, String password) {
+	public UsuarioSessao(String name, String password) {
 		this.nome = name;
 		this.senha = password;
 	}
