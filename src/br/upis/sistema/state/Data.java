@@ -19,6 +19,7 @@ public class Data {
 	
 	@Override
 	public String toString() {
-		return dia + "/" + mes + "/" + ano;
+		//System.out.println(String.format ("%04d", ano) + "-" + String.format ("%02d", mes) + "-" + String.format ("%02d", dia));
+		return ano + "-" + mes + "-" + dia;
 	}	
 }

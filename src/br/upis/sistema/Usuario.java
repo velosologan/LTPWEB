@@ -10,10 +10,10 @@ public class Usuario {
 	private Data dataNascimento;
 	
 	public Usuario(String nome, String email, String senha, Data dataNascimento){
-		this.nome = nome;
-		this.email = email;
-		this.senha = senha;
-		this.dataNascimento = dataNascimento;
+		setNome(nome);
+		setEmail(email);
+		setSenha(senha);
+		setDataNascimento(dataNascimento);
 	}
 
 	public String getNome() {
@@ -37,6 +37,9 @@ public class Usuario {
 	}
 
 	public void setSenha(String senha) {
+		if( senha.length() < 6 ) {
+			throw new RuntimeException("Senha deve ter 6 símbolos ou mais.");
+		}
 		this.senha = senha;
 	}
 

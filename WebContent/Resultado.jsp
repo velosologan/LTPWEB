@@ -11,15 +11,24 @@
 	<body>
 		<% List<Usuario> list = (List<Usuario>)request.getAttribute("listUsuarios"); %>
 		
-		<table>
+		<table border="1">
 			<tr>
 				<td>Sequencial</td>
-				<td>Dados</td>
+				<td>Nome</td>
+				<td>E-mail</td>
+				<td>Senha</td>
+				<td>Data Nascimento</td>
+				<td>Edição</td>
 			</tr>
 			<% for(int i = 0; i < list.size(); i++){ %>
+				<%Usuario user = list.get(i); %>
 				<tr>
 					<td><%= i + 1 %></td>
-					<td><%= list.get(i) %></td>
+					<td><%= user.getNome() %></td>
+					<td><%= user.getEmail() %></td>
+					<td><%= user.getSenha() %></td>
+					<td><%= user.getDataNascimento() %></td>
+					<td><a href=<%= "crud?posicao=" + (i)%>>editar</a></td>
 				</tr>
 			<% } %>
 		</table>		
